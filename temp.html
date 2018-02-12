@@ -1,0 +1,81 @@
+
+
+
+<!DOCTYPE HTML>
+<HTML>
+<head> 
+    <title></title>    
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+      
+</head>   
+<body>
+<div class ="container" id="wrapper">
+    <nav id="navigation_bar">
+        <div class="navbar navbar-expand-lg navbar-light bg-light"> 
+          <a class="navbar-brand" href="index.html" id="logo">Latitude</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto" id="nav_list">
+          <li class="nav-item active">
+            <a class="nav-link" href="data.html">Data <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Comparrison</a>
+          </li>
+          <li class="nav-item dropdown navbar-right" id="dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="temp.html">Temperture</a>
+              <a class="dropdown-item" href="cloud.html">Cloudiness</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="humid.html">Humidity</a>
+            </div>
+          </li>
+            </div>
+        </div>        
+    </nav>
+    <div class="row">
+    <div class="col-lg-12">
+        <h1>Latitude VS Temperture</h1>
+    
+    </div>
+    </div>
+    <div class= "row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4" id="temp_pic">
+            <img src="lat_temp.png">
+        </div>
+    </div>
+        <div class="row">
+        <div class="col-lg-12">
+            <p>
+            This graph shows the Temperture VS the different latitudes ranging from -100 to 100. It is clear that the closer you get to the Equator, or 0 Degrees, the warmer the temperture is. This makes sense as the angle of the sun is greater the closer to the equator you get. 
+            </p>    
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <p>The technology used in creating this graph includes Open Weather API, Python3, and Jupyter Notebook to create the plots.</p>
+            </div>    
+            
+        </div>
+        <div class="row">
+            <div class="col-lg-12" id="footer">
+                Created by Zach Quasney
+            </div>    
+        
+        </div>
+                
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>    
+</HTML>
