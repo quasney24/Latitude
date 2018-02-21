@@ -4,7 +4,7 @@
 <!DOCTYPE HTML>
 <HTML>
 <head> 
-    <title></title>    
+    <title>Latitude</title>    
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="style.css">
@@ -25,7 +25,7 @@
             <a class="nav-link" href="data.html">Data <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Comparrison</a>
+            <a class="nav-link" href="compare.html">Comparrison</a>
           </li>
           <li class="nav-item dropdown navbar-right" id="dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -34,8 +34,9 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="temp.html">Temperture</a>
               <a class="dropdown-item" href="cloud.html">Cloudiness</a>
-              <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="humid.html">Humidity</a>
+              <a class="dropdown-item" href="wind.html">Wind</a>
+                
             </div>
           </li>
         </ul>
@@ -46,13 +47,19 @@
             </div>
         </div>        
     </nav>
+    <div class="jumbotron jumbotron-fluid" style="margin-top:3%;">
+                <div class="container">
+                    <h1 class="display-5" id="top_jumbo" style="color:black">HTML/CSS/Bootstrap</h1>
+                        <p class="lead"></p>
+                </div>
+            </div>
     
     <div class="col-lg-12">
         <h1>Overview</h1>
     
     </div>
     <div class= "row">
-        <div class="col-lg-12">
+        <div class="col-lg-12 text-center">
             <p>The purpose of this project is to review Weather data at different latitudial coordinates to find and review trends. This website contains a series of plots created by plugging to the Open Weather API, and using Jupyter Notebook to display and visualize the data. </p>
         </div>
         
@@ -112,20 +119,24 @@
                 <button class="button">Jupyter Notebook</button>
                 
             </div>-->
-        <h1>Project Documentation</h1>
+        <div class = "row" style="margin-top:3%;">
+            <div class="col-lg-12"></div>
+        </div>
         <div class="row">
-            <div class="col-lg-4 border border-white rounded" id="api_box">
-                <h4>Weather API</h4>
+            <div class="col-lg-4 border border-white rounded text-center" id="api_box">
+                <h4 style="margin-top:3%;">Weather API</h4>
                 <p>This is the Open Source WeaTHER API</p>
-                <button type="button" class="btn btn-secondary center-block">Secondary</button>
+                <a href="https://openweathermap.org/api"><button type="button" class="btn btn-secondary center-block" id="weather_button">API Documentation</button></a>
             </div>
-            <div class="col-lg-4 border border-white rounded" id="api_box">
-                <h4>Weather API</h4>
-                <p>This is the Open Source WeaTHER API</p>
+            <div class="col-lg-4 border border-white rounded text-center">
+                <h4 style="margin-top:3%;">Python 3 Libraries</h4>
+                <p>Link to the Matplotlib documentation</p>
+                <a href="https://www.python.org/download/releases/3.0/"><button type="button" class="btn btn-secondary center-block">Python 3</button></a>
             </div>
-            <div class="col-lg-4 border border-white rounded " id="api_box">
-                <h4>Weather API</h4>
-                <p>This is the Open Source WeaTHER API</p>
+            <div class="col-lg-4 border border-white rounded text-center">
+                <h4 style="margin-top:3%;">Bootstrap</h4>
+                <p>Want more info about how this page was built?</p>
+                <a href="https://getbootstrap.com/"> <button type="button" class="btn btn-secondary center-block">Bootstrap</button></a>
             </div>
     
         </div>
